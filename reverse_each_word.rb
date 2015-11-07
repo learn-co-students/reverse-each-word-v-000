@@ -1,7 +1,3 @@
-#def reverse_each_word(sentence)
-#  sentence.split(" ").map.each {|x| x.reverse}.join(" ")
-#end
-
 def reverse_each_word(sentence)
   sentence = sentence.split(" ")
   reverse = []
@@ -9,3 +5,6 @@ def reverse_each_word(sentence)
   reverse.join(" ")
 end
 
+#def reverse_each_word(sentence)
+#  sentence.split(" ").map.each {|x| x.reverse}.join(" ")
+#end
