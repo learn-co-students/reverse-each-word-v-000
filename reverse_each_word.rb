@@ -6,9 +6,13 @@
 #   new_string.chomp(" ")
 # end
 
+# def reverse_each_word(string)
+#   reverse_array = string.split.collect do |word|
+#     word.reverse
+#   end
+#   reverse_array.join(" ")
+# end
+
 def reverse_each_word(string)
-  reverse_array = string.split.collect do |word|
-    word.reverse
-  end
-  reverse_array.join(" ")
+  string.split.collect {|word| word.reverse}.join(" ")
 end
