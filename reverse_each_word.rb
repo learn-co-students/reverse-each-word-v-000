@@ -8,11 +8,7 @@
 # end
 
 def reverse_each_word(sentence)
-	string_array = sentence.split(" ")
-	string_array.collect do |word|
-		word.reverse
-	end
-	.join(" ")
+	sentence.split(" ").collect { |word| word.reverse }.join(" ")
 end
 
 p reverse_each_word("Hello there, and how are you?")
