@@ -14,7 +14,7 @@ end
 def reverse_each_word(sentence1)
   new = sentence1.split
   new.map do |x|
-  x.reverse!
+  x.reverse
   end
   return new.join(" ")
 end
