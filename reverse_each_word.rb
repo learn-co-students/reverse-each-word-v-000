@@ -1,7 +1,6 @@
 #collect solution
 def reverse_each_word(sentence)
-	s = sentence.split.collect {|word| word.reverse}
-	s.join(" ")
+	sentence.split.collect {|word| word.reverse}.join(" ")
 end
 
 
@@ -16,3 +15,9 @@ def reverse_each_word(sentence)
 	end
 	new_array.join(" ")
 end
+
+# Without iterating:
+
+# def reverse_each_word(sentence)
+#  sentence.reverse.split.reverse.join(" ")
+# end
