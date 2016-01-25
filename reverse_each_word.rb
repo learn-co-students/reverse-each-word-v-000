@@ -1,3 +1,12 @@
+#collect solution
+def reverse_each_word(sentence)
+	s = sentence.split.collect {|word| word.reverse}
+	s.join(" ")
+end
+
+
+
+__END__
 
 #each solution
 def reverse_each_word(sentence)
