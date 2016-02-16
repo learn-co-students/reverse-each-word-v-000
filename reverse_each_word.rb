@@ -8,14 +8,15 @@ def reverse_each_word(sentence)
   sentence.chop
 end
 
-#def reverse_with_collect(sentence)
-#  reverse = ""
-#  split = sentence.split(" ")
-#  split.collect do |word|
-#    reverse << word.reverse
-#    reverse << " "
-#  end
-#  reverse.chop
+#sentence = "Hello there, and how are you?"
+
+#### SOLUTIONS #####
+# *NOTE* .split does not require an argument like (" ")
+
+#def reverse_each_word(sentence)
+#  sentence.split.collect {|word| word.reverse}.join(" ")
 #end
 
-#sentence = "Hello there, and how are you?"
+#def reverse_each_word(sentence)
+#sentence.reverse.split.reverse.join(" ")
+#end
