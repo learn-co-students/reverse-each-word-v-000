@@ -1,4 +1,3 @@
-
 # def reverse_each_word(sentence)
 #     sentence.split do |newsen|
     #  newsen.each do |ns|          ---This does NOTHING!--------
