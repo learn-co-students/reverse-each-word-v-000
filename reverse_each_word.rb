@@ -1,9 +1,6 @@
 def reverse_each_word(sentence)
-  catcher = []
   first_array = sentence.split(" ")
-  first_array.each do |word|
-    catcher << word.reverse
+  first_array.collect do |word|
+    word.reverse.join(" ")
   end
-  catcher = catcher.join(" ")
-  catcher
 end
