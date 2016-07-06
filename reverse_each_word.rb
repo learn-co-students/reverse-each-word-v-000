@@ -1,10 +1,14 @@
 require 'pry'
-
+#
+# def reverse_each_word(sentence)
+#   sentence.split.collect do |each_word|
+#     each_word.reverse
+#   end.join(" ")
+# end
+#or you could simply write it this way
 def reverse_each_word(sentence)
-  sentence.split.collect do |each_word|
-    each_word.reverse
-  end.join(" ")
-end
+  sentence.split.collect {|each_word|each_word.reverse}.join(" ")
+  end
 
 #  def reverse_each_word(sentence)
 #   new_sentence = []
