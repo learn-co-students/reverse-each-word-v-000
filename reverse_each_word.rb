@@ -21,3 +21,19 @@ def reverse_each_word(string)
   end
   return reversed
 end
+
+
+# Most efficient solution (using #each):
+# def reverse_each_word(sentence)
+#   sentence.split.each {|word| word.reverse}.join(" ")
+# end
+
+# Most efficient solution (using #collect):
+# def reverse_each_word(sentence)
+#   sentence.split.collect {|word| word.reverse}.join(" ")
+# end
+
+# Without iteration:
+# def reverse_each_word(sentence)
+#   sentence.reverse.split.reverse.join(" ")
+# end
