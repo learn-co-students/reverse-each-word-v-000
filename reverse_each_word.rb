@@ -14,6 +14,8 @@ def reverse_each_word(sentence)
   newstring = newarray.join
   newstring2 = newstring.chop
   #binding.pry
-  return newstring2
+  newstring2
 end
+
+
 
