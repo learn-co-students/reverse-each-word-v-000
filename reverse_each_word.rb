@@ -29,7 +29,9 @@ def reverse_each_word2(sentence)
     newarray << ("#{newwords}" " ")
     #binding.pry
   end
+  binding.pry
   newstring = newarray.join
+  #binding.pry
   newstring2 = newstring.chop
   #binding.pry
   newstring2
