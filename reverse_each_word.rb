@@ -31,7 +31,7 @@ def reverse_each_word(sentence2)
   end
   #binding.pry
   newstring = newarray.join
-  binding.pry
+  #binding.pry
   newstring2 = newstring.chop
   #binding.pry
   newstring2
