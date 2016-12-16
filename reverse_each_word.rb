@@ -18,12 +18,12 @@ def reverse_each_word(sentence)
 end
 
 def reverse_each_word(sentence2)
-  binding.pry
+  #binding.pry
 	array = sentence2.split
   #binding.pry
   newarray = []
   array.collect do |words|
-    binding.pry 
+    #binding.pry 
     newwords = words.reverse
     #binding.pry
     newarray << ("#{newwords}" " ")
@@ -31,7 +31,7 @@ def reverse_each_word(sentence2)
   end
   #binding.pry
   newstring = newarray.join
-  binding.pry
+  #binding.pry
   newstring2 = newstring.chop
   #binding.pry
   newstring2
