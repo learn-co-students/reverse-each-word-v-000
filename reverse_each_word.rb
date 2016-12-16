@@ -1,16 +1,43 @@
 require 'pry'
 def reverse_each_word(sentence)
-    sentence.split
-    #has a return value for .split is a method
-    puts "#{sentence}"
-    binding.pry
-  sentence.each do |sentence1|
-    binding.pry 
-    sentence1.reverse
-    binding.pry
-    puts "#{sentence1}" 
-    binding.pry
+  #binding.pry
+	array = sentence.split
+  #binding.pry
+  newarray = []
+  array.each do |words|
+    #binding.pry 
+    newwords = words.reverse
+    #binding.pry
+    newarray << ("#{newwords}" " ")
+    #binding.pry
   end
+  newstring = newarray.join
+  newstring2 = newstring.chop
+  #binding.pry
+  newstring2
 end
 
-    
+def reverse_each_word2(sentence)
+  #binding.pry
+	array = sentence.split
+  #binding.pry
+  newarray = []
+  array.collect do |words|
+    #binding.pry 
+    newwords = words.reverse
+    #binding.pry
+    newarray << ("#{newwords}" " ")
+    #binding.pry
+  end
+  binding.pry
+  newstring = newarray.join
+  #binding.pry
+  newstring2 = newstring.chop
+  #binding.pry
+  newstring2
+end
+
+
+
+
+
