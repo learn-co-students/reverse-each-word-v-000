@@ -9,6 +9,5 @@ end
 
 #solution using .collect method
 def reverse_each_word(sentence)
-  sentence_array = sentence.split(" ").collect{|word| word.reverse}
-  sentence_array.join(" ")
+  sentence.split(" ").collect{|word| word.reverse}.join(" ")
 end
