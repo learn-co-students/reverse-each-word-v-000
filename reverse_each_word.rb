@@ -7,10 +7,10 @@
 #     reverse_array.join(" ")
 # end
 
+
 def reverse_each_word(sentence)
     sentence_array = sentence.split(" ")
     sentence_array.collect{|element|
-        element.reverse!
-    }
-    sentence_array.join(" ")
+        element.reverse
+    }.join(" ")
 end
