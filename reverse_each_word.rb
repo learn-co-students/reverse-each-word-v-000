@@ -6,3 +6,4 @@ def reverse_each_word(array)
     end
     new_array.join(" ")
 end
+#trying to submit
