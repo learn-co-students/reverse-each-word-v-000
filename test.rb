@@ -17,3 +17,6 @@ def reverse_each_word(sentence)
   reversed_word_array.reverse!
   reversed_word_array.join(" ")
 end
+
+
+reversed_sentence = sentence.reverse
