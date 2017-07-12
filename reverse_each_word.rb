@@ -1,4 +1,3 @@
-require 'pry'
 def reverse_each_word(sentence)
   word_array = sentence.split
   reversed_word_array = Array.new
