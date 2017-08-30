@@ -1,5 +1,5 @@
 def reverse_each_word(scentence)
-reversed_words = []
+  reversed_words = []
   word_array = scentence.split
   word_array.collect do |word|
     reversed_words << word.reverse
