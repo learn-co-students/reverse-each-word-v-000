@@ -1,8 +1,6 @@
 def reverseword(string)
-  array= string.split
-  array.collect do |item|
-    item.reverse
-  end
+  string.split.collect {|item|
+    item.reverse}
 end
 
 
