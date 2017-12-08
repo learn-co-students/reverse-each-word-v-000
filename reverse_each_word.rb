@@ -8,7 +8,7 @@ def reverse_each_word(sentence)
       end_loop -= 1
       new_string += string[end_loop]
     end
-  reverse_array << new_string
+  reverse_array.push(new_string)
   end
   reverse_array.join(" ")
 end
@@ -23,7 +23,7 @@ def reverse_each_word(sentence)
       end_loop -= 1
       new_string += string[end_loop]
     end
-  reverse_array << new_string
+  reverse_array.push(new_string)
   end
   reverse_array.join(" ")
 end
