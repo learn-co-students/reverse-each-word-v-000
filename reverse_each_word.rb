@@ -1,19 +1,21 @@
-
+=begin
 def reverse_each_word(sentence)
     sen = ""         
     sentence.split.collect do |x|
         sen = sen << x.reverse + " "
     end
-    return sen.chop
+    sen.chop
 end
 
-=begin
-def reverse_each_word(sentence)
-    sen = []         
-    sentence.split.collect do |x|
-        sen = sen << x.reverse
-    end
-    sen.
-
-end
 =end
+
+
+def reverse_each_word(sentence)
+    sen = sentence.split.collect do |word|
+    word.reverse
+        
+  end
+  
+  sen.join(" ")
+    
+  end
