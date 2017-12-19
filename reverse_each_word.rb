@@ -18,3 +18,14 @@ def reverse_each_word(argument)
   reverse_words.join(" ")
 end
 =end
+
+# SOLVE WITH collect
+def reverse_each_word(argument)
+  array = []
+  reverse_words = []
+  array = argument.split(" ")
+    array.collect do |word|
+      reverse_words << word.reverse
+    end
+    reverse_words.join(" ")
+  end
