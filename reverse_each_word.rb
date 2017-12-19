@@ -17,8 +17,8 @@ def reverse_each_word(argument)
     end
   reverse_words.join(" ")
 end
-=end
 
+=end
 # SOLVE WITH collect
 def reverse_each_word(argument)
   array = []
@@ -29,3 +29,11 @@ def reverse_each_word(argument)
     end
     reverse_words.join(" ")
   end
+
+
+##FORMAL SOLUTION---3 lines
+=begin
+def reverse_each_word(sentence)
+  sentence.split.collect {|word| word.reverse}.join(" ")
+end
+=end
