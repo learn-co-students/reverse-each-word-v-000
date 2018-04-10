@@ -6,4 +6,3 @@ def reverse_each_word(phrase)
 	phrase.join(' ') 
 end 
 
-reverse_each_word("Does this even work?")
