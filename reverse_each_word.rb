@@ -8,3 +8,14 @@ def reverse(string)
  
  return (reverse_each_word(sentence2))
 end
+
+def reverse(string)
+ string = string.split('')
+ reverse_each_word = []
+ 
+ string.collect do |char|
+  reversed_string.unshift(char)
+ end
+ 
+ return (reverse_each_word(sentence2))
+end
