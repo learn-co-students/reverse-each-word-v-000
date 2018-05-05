@@ -1,6 +1,6 @@
 def reverse(string)
  string = string.split('')
- reversed_string = []
+ reverse_each_word = []
  
  string.each do |char|
   reversed_string.unshift(char)
