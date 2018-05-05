@@ -6,7 +6,7 @@ def reverse(string)
   reversed_string.unshift(char)
  end
  
- return (reverse_each_word(sentence2))
+ return (reverse_each_word(string))
 end
 
 def reverse(string)
@@ -17,5 +17,5 @@ def reverse(string)
   reversed_string.unshift(char)
  end
  
- return (reverse_each_word(sentence2))
+ return (reverse_each_word(string))
 end
