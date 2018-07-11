@@ -1,6 +1,13 @@
+#def reverse_each_word(sentence)
+#  reversed_sentence = []
+#  sentence.split(' ').each do |word|
+#    reversed_sentence << word.reverse
+#  end
+#  reversed_sentence.join(" ")
+#end
+
 def reverse_each_word(sentence)
-  reversed_sentence = []
-  sentence.split(' ').each do |reverse|
-    reversed_sentence << reverse
-  end
+ sentence.split(" ").collect do |word|
+    word.reverse
+  end.join(" ")
 end
