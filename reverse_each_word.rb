@@ -7,8 +7,5 @@ def reverse_each_word(sentence1)
 end
 
 def reverse_each_word(sentence2)
-  reversed = sentence2.split(" ").collect do |element|
-    element.reverse
-  end
-  reversed.join(" ")
+  sentence2.split.collect {|element| element.reverse}.join(" ")
 end
