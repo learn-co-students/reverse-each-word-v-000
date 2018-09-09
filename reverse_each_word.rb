@@ -1,4 +1,3 @@
 def reverse_each_word(s)
-  reversed = s.split.collect{|word| word.reverse}
-  return reversed.join(" ")
+  s.split.collect{|word| word.reverse}.join(" ")
 end
