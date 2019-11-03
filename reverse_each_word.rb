@@ -10,14 +10,6 @@ def reverse_each_word(phrase)
   	return reversed_words_phrase
 end
 
-def reverse_each_word_with_collect(phrase)
-	new_phrase = []
-	new_phrase = phrase.split(' ')
-	words_reversed_array = []
-	reversed_words_string = ""
-	new_phrase.collect do |word|
-		words_reversed_array << word.reverse()
-		reversed_words_string = words_reversed_array.join(' ')
-	end
-	return reversed_words_string
+def reverse_each_word(sentence)
+  sentence.split.collect {|i| i.reverse}.join(" ")
 end
