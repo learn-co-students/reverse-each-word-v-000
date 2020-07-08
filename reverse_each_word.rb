@@ -1,6 +1,13 @@
 require 'pry'
 
 def reverse_each_word(string)
-# binding.pry
   string.split.collect {|word| word.reverse}.join(" ")
 end
+
+# def reverse_each_word(string)
+#   reverse = []
+#     string.split.each do |word|
+#       reverse << word.reverse
+#     end
+#   reverse.join(" ")
+# end
