@@ -1,0 +1,33 @@
+
+[1mFrom:[0m /home/emanao-49242/code/labs/reverse-each-word-v-000/reverse_each_word.rb @ line 22 Object#reverse_each_word:
+
+     [1;34m2[0m: [32mdef[0m [1;34mreverse_each_word[0m(sentence)
+     [1;34m3[0m:   [1;34m#reverse_each_word with each[0m
+     [1;34m4[0m:   reverse_words_array=[]
+     [1;34m5[0m:   sentence.split([31m[1;31m"[0m[31m [1;31m"[0m[31m[0m).each{|word|
+     [1;34m6[0m:     reverse_word = []
+     [1;34m7[0m:     word.split([31m[1;31m"[0m[31m[1;31m"[0m[31m[0m).each{|letter|
+     [1;34m8[0m:       reverse_word.unshift(letter)
+     [1;34m9[0m:     }
+    [1;34m10[0m:     reverse_words_array<<reverse_word.join
+    [1;34m11[0m:   }
+    [1;34m12[0m:   reverse_words_array.join([31m[1;31m"[0m[31m [1;31m"[0m[31m[0m)
+    [1;34m13[0m: 
+    [1;34m14[0m:   [1;34m#reverse_each_word with collect[0m
+    [1;34m15[0m:   reverse_words_array=sentence.split([31m[1;31m"[0m[31m [1;31m"[0m[31m[0m)
+    [1;34m16[0m:   reverse_words_array.collect{|word|
+    [1;34m17[0m:     reverse_word=[]
+    [1;34m18[0m:     word.split([31m[1;31m"[0m[31m[1;31m"[0m[31m[0m).each{|letter|
+    [1;34m19[0m:       reverse_word.unshift(letter)
+    [1;34m20[0m:     }
+    [1;34m21[0m:     reverse_word.join
+ => [1;34m22[0m:     binding.pry
+    [1;34m23[0m:     [1;34m#reverse_words_array<<reverse_word.join[0m
+    [1;34m24[0m:   }
+    [1;34m25[0m: 
+    [1;34m26[0m:   puts reverse_words_array
+    [1;34m27[0m:   binding.pry
+    [1;34m28[0m:   reverse_words_array.join
+    [1;34m29[0m: 
+    [1;34m30[0m: [32mend[0m
+
